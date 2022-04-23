@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://springframework.org/schema/context"
+	 xmlns:p="http://springframework.org/schema/p"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--  
+	<bean class="com.springcore.Student" name="student1">	
+	<property name="studentId" value="17" />
+	<property name="studentName" value="Divesh Kumar" />
+	<property name="studentAddress" value="New Delhi"/>
+	</bean>
+	 
+	<bean class="com.springcore.Student" name="student2">	
+	<property name="studentId" value="18" />
+	<property name="studentName" value="Anshu Kumar" />
+	<property name="studentAddress" value="New Delhi"/>
+	</bean>		
+	-->
+	
+	<!-- Method 1 : Using value as "Elements" 
+	 
+	<bean class="com.springcore.Student" name="student1">
+		<property name="studentId">
+			<value>11</value>
+		</property>
+		
+		<property name="studentName">
+			<value>Divesh Kumar</value>
+		</property>
+		
+		<property name="studentAddress">
+			<value>New Delhi</value>
+		</property>
+	-->
+
+	<!-- Method 2 : Using value as "Attribute" 
+	 
+	<bean class="com.springcore.Student" name="student1">	
+	<property name="studentId" value="17" />
+	<property name="studentName" value="Divesh Kumar" />
+	<property name="studentAddress" value="New Delhi"/>
+	</bean>
+	 
+	<bean class="com.springcore.Student" name="student2">	
+	<property name="studentId" value="18" />
+	<property name="studentName" value="Anshu Kumar" />
+	<property name="studentAddress" value="New Delhi"/>
+	</bean>	
+	-->
+	
+	<!-- Using p-Schema -->
+	
+	<bean class="com.springcore.Student"  name="student1"  p:studentId = "21"  p:studentName="Divesh Kumar"  p:studentAddress="New Delhi"/>
+	<bean class="com.springcore.Student"  name="student2"  p:studentId = "30"  p:studentName="Aman"  p:studentAddress="Sonipat"/>
+</beans>

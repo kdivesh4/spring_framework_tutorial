@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://springframework.org/schema/context"
+	 xmlns:p="http://springframework.org/schema/p"
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean name="emp1" class="com.springcore.collections.Employee">
+	
+	<property name="name" value="Nikhil" />
+	
+	<property name="phones">
+		<list>
+			<value>345678901</value>
+			<value>45123786</value>
+			<value>76543890</value>
+		</list>
+	</property>
+	
+	<property name="addresses">
+		<set>
+			<value>New Delhi</value>
+			<value>Lucknow</value>
+		</set>
+	</property>
+	
+	<property name="courses">
+		<map>
+			<entry key="java " value=" 2 month "/>
+			<entry key="python " value=" 1 month "/>
+			<entry key="c++ " value=" 0.5 month "/>
+		</map>
+	</property>
+	
+	<property name="cprop">
+		<props>
+			<prop key="name">Sandeep</prop>
+			<prop key="addresses">NewDelhi</prop>
+		</props>		
+	</property>
+	</bean>
+	
+	
+	<bean name="emp2" class="com.springcore.collections.Employee">
+	
+	<property name="name" value="Tanmay" />
+	
+	<property name="phones">
+		<list>
+		<value>7865439023</value>
+		<value>3456789014</value>
+		</list>
+	</property>
+	
+	<property name="addresses">
+		<set>
+			<value>Chennai</value>
+			<value>Kashmir</value>
+		</set>
+	</property>
+	
+	<property name="courses">
+		<map>
+			<entry key="java" value="3 month "/>
+			<entry key="python" value="2 month "/>
+			<entry key="c++" value=" 4 month "/>		
+		</map>
+	</property>
+	
+	<property name="cprop">
+		<props>
+			<prop key="name">Shaurya</prop>
+			<prop key="addresses">Tamilnadu</prop>
+		</props>
+	</property>
+	</bean>
+</beans>
